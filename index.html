@@ -1,55 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Domain For Sale</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-font-family: Arial, sans-serif;
-background:#0f172a;
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-height:100vh;
-text-align:center;
-}
-
-.box{
-background:#1e293b;
-padding:40px;
-border-radius:10px;
-}
-
-h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-p{
-font-size:18px;
-color:#cbd5f5;
-}
-
-.contact{
-margin-top:20px;
-font-size:16px;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+.page{min-height:100vh;background:#1a1a1a;display:flex;align-items:center;justify-content:center;padding:2rem;font-family:var(--font-sans,system-ui,sans-serif)}
+.card{background:#242424;border:0.5px solid rgba(255,255,255,0.1);border-radius:20px;padding:3rem 2.5rem;max-width:520px;width:100%;text-align:center}
+.badge{display:inline-block;background:rgba(180,180,180,0.12);color:#b4b4b4;font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;border:0.5px solid rgba(180,180,180,0.25);margin-bottom:1.5rem;letter-spacing:0.05em;text-transform:uppercase}
+.domain{font-size:clamp(2rem,6vw,3rem);font-weight:700;color:#f1f1f1;letter-spacing:-0.02em;margin-bottom:0.5rem}
+.tld{color:#909090}
+.tagline{font-size:15px;color:#888;line-height:1.6;margin-bottom:2rem}
+.divider{height:0.5px;background:rgba(255,255,255,0.08);margin:2rem 0}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:2rem}
+.feat{background:rgba(255,255,255,0.04);border:0.5px solid rgba(255,255,255,0.07);border-radius:10px;padding:14px;text-align:left}
+.feat-icon{font-size:18px;margin-bottom:6px}
+.feat-label{font-size:11px;color:#555;text-transform:uppercase;letter-spacing:0.06em;font-weight:500;margin-bottom:3px}
+.feat-val{font-size:14px;color:#bbb;font-weight:500}
+.cta-group{display:flex;flex-direction:column;gap:10px}
+.cta-primary{background:#555;color:#f1f1f1;border:none;border-radius:10px;padding:14px 24px;font-size:15px;font-weight:500;cursor:pointer;width:100%;transition:background 0.2s}
+.cta-primary:hover{background:#666}
+.cta-secondary{background:transparent;color:#888;border:0.5px solid rgba(255,255,255,0.12);border-radius:10px;padding:13px 24px;font-size:14px;cursor:pointer;width:100%;transition:background 0.2s}
+.cta-secondary:hover{background:rgba(255,255,255,0.05);color:#bbb}
+.contact-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:1.5rem;font-size:13px;color:#555}
+.dot{width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block}
+.email{color:#999;text-decoration:none}
+.email:hover{color:#bbb}
+.price-note{font-size:12px;color:#555;margin-top:1rem}
 </style>
-</head>
 
-<body>
+<div class="page">
+  <div class="card">
+    <div class="badge">Premium Domain</div>
+    <div class="domain">noweb<span class="tld">.site</span></div>
+    <p class="tagline">A short, memorable domain ready for your next big idea — brand, startup, or product launch.</p>
 
-<div class="box">
-<h1>🚀 noweb.site</h1>
-<p>This domain is available for sale</p>
+    <div class="features">
+      <div class="feat">
+        <div class="feat-icon">⚡</div>
+        <div class="feat-label">Extension</div>
+        <div class="feat-val">.site TLD</div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">✦</div>
+        <div class="feat-label">Length</div>
+        <div class="feat-val">5 characters</div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">◈</div>
+        <div class="feat-label">Type</div>
+        <div class="feat-val">Dictionary word</div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">◉</div>
+        <div class="feat-label">Status</div>
+        <div class="feat-val" style="color:#4ade80">Available now</div>
+      </div>
+    </div>
 
-<div class="contact">
-Contact: support@noweb.site
+    <div class="divider"></div>
+
+    <div class="cta-group">
+      <button class="cta-primary" onclick="window.location.href='mailto:support@noweb.site?subject=Inquiry: noweb.site Domain Purchase'">Make an offer</button>
+      <button class="cta-secondary" onclick="window.location.href='mailto:support@noweb.site?subject=Question: noweb.site Domain'">Ask a question</button>
+    </div>
+
+    <div class="contact-row">
+      <span class="dot"></span>
+      <span>Contact:</span>
+      <a href="mailto:support@noweb.site" class="email">support@noweb.site</a>
+    </div>
+    <p class="price-note">Secure transfer · Fast response · Negotiable pricing</p>
+  </div>
 </div>
-
-</div>
-
-</body>
-</html>
