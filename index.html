@@ -2,6 +2,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 .page{min-height:100vh;background:#1a1a1a;display:flex;align-items:center;justify-content:center;padding:2rem;font-family:var(--font-sans,system-ui,sans-serif)}
+.scale-wrap{transform:scale(0.9);transform-origin:center center}
 .card{background:#242424;border:0.5px solid rgba(255,255,255,0.1);border-radius:20px;padding:3rem 2.5rem;max-width:520px;width:100%;text-align:center}
 .badge{display:inline-block;background:rgba(180,180,180,0.12);color:#b4b4b4;font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;border:0.5px solid rgba(180,180,180,0.25);margin-bottom:1.5rem;letter-spacing:0.05em;text-transform:uppercase}
 .domain{font-size:clamp(2rem,6vw,3rem);font-weight:700;color:#f1f1f1;letter-spacing:-0.02em;margin-bottom:0.5rem}
@@ -26,46 +27,48 @@
 </style>
 
 <div class="page">
-  <div class="card">
-    <div class="badge">Premium Domain</div>
-    <div class="domain">noweb<span class="tld">.site</span></div>
-    <p class="tagline">A short, memorable domain ready for your next big idea — brand, startup, or product launch.</p>
+  <div class="scale-wrap">
+    <div class="card">
+      <div class="badge">Premium Domain</div>
+      <div class="domain">noweb<span class="tld">.site</span></div>
+      <p class="tagline">A short, memorable domain ready for your next big idea — brand, startup, or product launch.</p>
 
-    <div class="features">
-      <div class="feat">
-        <div class="feat-icon">⚡</div>
-        <div class="feat-label">Extension</div>
-        <div class="feat-val">.site TLD</div>
+      <div class="features">
+        <div class="feat">
+          <div class="feat-icon">⚡</div>
+          <div class="feat-label">Extension</div>
+          <div class="feat-val">.site TLD</div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">✦</div>
+          <div class="feat-label">Length</div>
+          <div class="feat-val">5 characters</div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">◈</div>
+          <div class="feat-label">Type</div>
+          <div class="feat-val">Dictionary word</div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">◉</div>
+          <div class="feat-label">Status</div>
+          <div class="feat-val" style="color:#4ade80">Available now</div>
+        </div>
       </div>
-      <div class="feat">
-        <div class="feat-icon">✦</div>
-        <div class="feat-label">Length</div>
-        <div class="feat-val">5 characters</div>
+
+      <div class="divider"></div>
+
+      <div class="cta-group">
+        <button class="cta-primary" onclick="window.location.href='mailto:support@noweb.site?subject=Inquiry: noweb.site Domain Purchase'">Make an offer</button>
+        <button class="cta-secondary" onclick="window.location.href='mailto:support@noweb.site?subject=Question: noweb.site Domain'">Ask a question</button>
       </div>
-      <div class="feat">
-        <div class="feat-icon">◈</div>
-        <div class="feat-label">Type</div>
-        <div class="feat-val">Dictionary word</div>
+
+      <div class="contact-row">
+        <span class="dot"></span>
+        <span>Contact:</span>
+        <a href="mailto:support@noweb.site" class="email">support@noweb.site</a>
       </div>
-      <div class="feat">
-        <div class="feat-icon">◉</div>
-        <div class="feat-label">Status</div>
-        <div class="feat-val" style="color:#4ade80">Available now</div>
-      </div>
+      <p class="price-note">Secure transfer · Fast response · Negotiable pricing</p>
     </div>
-
-    <div class="divider"></div>
-
-    <div class="cta-group">
-      <button class="cta-primary" onclick="window.location.href='mailto:support@noweb.site?subject=Inquiry: noweb.site Domain Purchase'">Make an offer</button>
-      <button class="cta-secondary" onclick="window.location.href='mailto:support@noweb.site?subject=Question: noweb.site Domain'">Ask a question</button>
-    </div>
-
-    <div class="contact-row">
-      <span class="dot"></span>
-      <span>Contact:</span>
-      <a href="mailto:support@noweb.site" class="email">support@noweb.site</a>
-    </div>
-    <p class="price-note">Secure transfer · Fast response · Negotiable pricing</p>
   </div>
 </div>
