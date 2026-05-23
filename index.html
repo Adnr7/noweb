@@ -5,26 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>noweb.site — Under Progress</title>
 <style>
+  /* Reset */
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  /* 2010s-ish: subtle gradient bg, drop shadow, rounded corners, a little gloss */
   body {
     height: 100vh;
-    background: #ffffff;
+    background: linear-gradient(#ffffff, #f2f2f2);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
     overflow: hidden;
+    color: #000;
   }
 
   .card {
     background: #ffffff;
     border: 1px solid #000000;
-    border-radius: 18px;
-    padding: 3rem 2rem;
-    max-width: 480px;
-    width: 90%;
+    border-radius: 14px;
+    padding: 2.4rem 2rem;
+    max-width: 520px;
+    width: 92%;
     text-align: center;
+
+    /* 2010-ish depth */
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+
+  .topbar {
+    margin: -2.4rem -2rem 1.8rem;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid #000;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background: linear-gradient(#ffffff, #ececec);
   }
 
   .badge {
@@ -32,37 +49,70 @@
     background: #ffffff;
     color: #000000;
     font-size: 11px;
-    font-weight: 500;
-    padding: 4px 12px;
+    font-weight: 700;
+    padding: 5px 12px;
     border-radius: 20px;
     border: 1px solid #000000;
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+
+    /* tiny 2010 vibe */
+    box-shadow: 0 1px 0 rgba(255,255,255,0.9), 0 2px 0 rgba(0,0,0,0.08);
   }
 
   .domain {
-    font-size: clamp(1.6rem, 5vw, 2.6rem);
-    font-weight: 700;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 800;
     color: #000000;
     letter-spacing: -0.02em;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.9);
   }
 
   .tld { color: #000000; }
 
   .tagline {
-    font-size: 15px;
+    font-size: 14px;
     color: #000000;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 1.1rem;
+  }
+
+  .contact {
+    border-top: 1px dashed #000;
+    padding-top: 1rem;
+    margin-top: 0.7rem;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .contact a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .contact a:hover,
+  .contact a:focus {
+    text-decoration: none;
+    outline: none;
   }
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="badge">Work In Progress</div>
+    <div class="topbar">
+      <div class="badge">Work In Progress</div>
+    </div>
+
     <div class="domain">noweb<span class="tld">.site</span></div>
-    
+    <p class="tagline">We’re building something simple and clean. Check back soon.</p>
+
+    <div class="contact">
+      <div>Need help or want updates?</div>
+      <div>
+        Email: <a href="mailto:support@noweb.site">support@noweb.site</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
